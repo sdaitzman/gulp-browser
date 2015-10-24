@@ -1,6 +1,6 @@
 {
   "name": "gulp-browser",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "bundles browserify and other goodies for gulp",
   "main": "index.js",
   "scripts": {
