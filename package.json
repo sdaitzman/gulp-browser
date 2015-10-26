@@ -26,7 +26,7 @@
   "homepage": "https://github.com/pushrocks/gulp-browser",
   "dependencies": {
     "browserify": "^11.2.0",
-    "gutil": "^1.6.4",
+    "gulp-util": "^3.0.7",
     "pushrocks": "^1.0.18",
     "through2": "^2.0.0"
   },
