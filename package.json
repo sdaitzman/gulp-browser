@@ -1,7 +1,7 @@
 {
   "name": "gulp-browser",
   "version": "0.0.7",
-  "description": "bundles browserify and other goodies for gulp",
+  "description": "browserify and other goodies for gulp",
   "main": "index.js",
   "scripts": {
     "test": "(cd ts/compile && node compile.js) && (node test.js)",
@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/pushrocks/gulp-browser",
   "dependencies": {
-    "browserify": "^11.2.0",
+    "browserify": "^12.0.0",
     "gulp-util": "^3.0.7",
     "pushrocks": "^1.0.18",
     "through2": "^2.0.0"
