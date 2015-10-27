@@ -4,3 +4,5 @@ node_modules/
 
 ts/*.js
 ts/*.js.map
+
+test/result/
