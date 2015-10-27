@@ -14,9 +14,10 @@ gulp-browser is meant to be easy:
     var gulp = require("gulp");
     var gulpBrowser = require("gulp-browser");
     
-    gulp.task('gulpBrowserTest',function(cb) {
-        gulp.src('./test/*.js')
+    gulp.task('gulpBrowserTest',function() {
+        var stream = gulp.src('./test/*.js')
             .pipe(gulpBrowser.browserify())
-            .pipe(gulp.dest("./test/browserifiedJS/"))
+            .pipe(gulp.dest("./test/browserifiedJS/"));
+        return stream;
     });
 ```
