@@ -1,2 +1,2 @@
-var pr = require("pushrocks");
-pr.beautylog.log("it works");
+var beautylog = require("beautylog");
+beautylog.log("it works");
