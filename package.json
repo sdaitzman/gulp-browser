@@ -27,13 +27,13 @@
   "dependencies": {
     "browserify": "12.0.1",
     "gulp-util": "3.0.7",
-    "pushrocks": "1.0.22",
+    "pushrocks": "1.0.23",
     "through2": "2.0.0"
   },
   "devDependencies": {
     "beautylog": "1.0.4",
     "gulp": "3.9.0",
-    "gulp-callfunction": "0.0.7",
+    "gulp-callfunction": "0.0.10",
     "gulp-typescript": "2.9.2"
   }
 }
