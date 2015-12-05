@@ -21,3 +21,5 @@ gulp-browser is meant to be easy:
         return stream;
     });
 ```
+
+> **Note:** Be aware of how gulp-src creates values of file.base and file.path since that is important to the require statements.
