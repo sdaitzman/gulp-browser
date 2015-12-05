@@ -5,7 +5,12 @@ var GulpBrowserBrowserify;
         return function () {
             return through.obj(function (file, enc, cb) {
                 var bundleCallback = function (err, bufferedContent) {
-                    file.contents = bufferedContent;
+                    if (Buffer.isBuffer(bufferedContent)) {
+                        file.contents = bufferedContent;
+                    }
+                    else {
+                        pr.beautylog.error("gulp-browser: .browserify() " + err.message);
+                    }
                     cb(null, file);
                 };
                 browserify(file)
