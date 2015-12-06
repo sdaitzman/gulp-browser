@@ -1,6 +1,7 @@
 node_modules/
 .settings/
 .idea/
+npm-debug.log
 
 ts/*.js
 ts/*.js.map
