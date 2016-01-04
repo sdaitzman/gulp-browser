@@ -13,7 +13,7 @@ var GulpBrowserBrowserify;
                     }
                     cb(null, file);
                 };
-                browserify(file)
+                browserify(file, { basedir: file.base })
                     .bundle(bundleCallback);
             });
         };
