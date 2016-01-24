@@ -1,29 +1,33 @@
 /// <reference path="./typings/tsd.d.ts" />
-var gulp = require("gulp");
-var gulpBrowser = require("./index.js");
-var pr = require("pushrocks");
-var gulpCallFunction = require("gulp-callfunction");
 
-var pipeWorked = function() {
-    pr.beautylog.info("Pipe didn't break! Ready for Primetime!");
+var plugins = {
+    beautylog: require("beautylog"),
+    gulp: require("gulp"),
+    gulpBrowser: require("./index.js"),
+    gulpCallFunction: require("gulp-callfunction")
 };
 
-pr.beautylog.log('Now trying to browserify a testfile...');
-gulp.task('gulpBrowserTest',function(cb) {
-    var stream =gulp.src('./test/browserifyGulpTest.js')
-        .pipe(gulpBrowser.browserify())
-        .pipe(gulp.dest("./test/result/"))
-        .pipe(gulpCallFunction(pipeWorked));
+
+var pipeWorked = function() {
+    plugins.beautylog.info("Pipe didn't break! Ready for Primetime!");
+};
+
+plugins.beautylog.log('Now trying to browserify a testfile...');
+plugins.gulp.task('gulpBrowserTest',function(cb) {
+    var stream = plugins.gulp.src('./test/browserifyGulpTest.js')
+        .pipe(plugins.gulpBrowser.browserify())
+        .pipe(plugins.gulp.dest("./test/result/"))
+        .pipe(plugins.gulpCallFunction(pipeWorked));
     return stream;
 });
-gulp.task('gulpBrowserTestError',function(cb) {
-    var stream = gulp.src('./test/browserifyGulpTestError.js')
-        .pipe(gulpBrowser.browserify())
-        .pipe(gulp.dest("./test/result/"))
-        .pipe(gulpCallFunction(pipeWorked));
+plugins.gulp.task('gulpBrowserTestError',function(cb) {
+    var stream = plugins.gulp.src('./test/browserifyGulpTestError.js')
+        .pipe(plugins.gulpBrowser.browserify())
+        .pipe(plugins.gulp.dest("./test/result/"))
+        .pipe(plugins.gulpCallFunction(pipeWorked));
     return stream;
 });
-gulp.task("default",['gulpBrowserTest','gulpBrowserTestError'],function(){
-    pr.beautylog.success("Test passed!");
+plugins.gulp.task("default",['gulpBrowserTest','gulpBrowserTestError'],function(){
+    plugins.beautylog.success("Test passed!");
 });
-gulp.start.apply(gulp, ['default']);
+plugins.gulp.start.apply(plugins.gulp, ['default']);

@@ -1,19 +1,21 @@
+#!/usr/bin/env node
+
 /// <reference path="./index.ts" />
 var GulpBrowserBrowserify;
 (function (GulpBrowserBrowserify) {
     function init() {
         return function () {
-            return through.obj(function (file, enc, cb) {
+            return plugins.through.obj(function (file, enc, cb) {
                 var bundleCallback = function (err, bufferedContent) {
                     if (Buffer.isBuffer(bufferedContent)) {
                         file.contents = bufferedContent;
                     }
                     else {
-                        pr.beautylog.error("gulp-browser: .browserify() " + err.message);
+                        plugins.beautylog.error("gulp-browser: .browserify() " + err.message);
                     }
                     cb(null, file);
                 };
-                browserify(file)
+                plugins.browserify(file)
                     .bundle(bundleCallback);
             });
         };
@@ -22,11 +24,13 @@ var GulpBrowserBrowserify;
 })(GulpBrowserBrowserify || (GulpBrowserBrowserify = {}));
 /// <reference path="./typings/tsd.d.ts" />
 /// <reference path="./modulebrowserify.ts" />
-var through = require("through2");
-var gutil = require("gulp-util");
-var path = require("path");
-var browserify = require("browserify");
-var pr = require("pushrocks");
+var plugins = {
+    beautylog: require("beautylog"),
+    through: require("through2"),
+    gutil: require("gulp-util"),
+    path: require("path"),
+    browserify: require("browserify")
+};
 //create the return object
 var gulpBrowser = {};
 gulpBrowser.browserify = GulpBrowserBrowserify.init();

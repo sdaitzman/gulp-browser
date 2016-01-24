@@ -1,11 +1,14 @@
 /// <reference path="./typings/tsd.d.ts" />
 /// <reference path="./modulebrowserify.ts" />
 
-var through = require("through2");
-var gutil = require("gulp-util");
-var path = require("path");
-var browserify = require("browserify");
-var pr = require("pushrocks");
+var plugins = {
+    beautylog: require("beautylog"),
+    through: require("through2"),
+    gutil: require("gulp-util"),
+    path: require("path"),
+    browserify: require("browserify")
+};
+
 
 //create the return object
 var gulpBrowser:any = {};
