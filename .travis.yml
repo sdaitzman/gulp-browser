@@ -1,13 +1,13 @@
 language: node_js
 node_js:
-  - "4.1"
+- '4.1'
 before_install:
-  - npm install -g tsd
+- npm install -g tsd
 deploy:
   provider: npm
-  email: npm@smart-coordination.com
+  email: npm@lossless.digital
   api_key:
-    secure: G2kV5r0/ZYzNYRxq3eL9in2uuXlE3xj2OAL8q/Xa2GVczMn/hU1FZItfnCYH7wOD1CqeUX1W5J87Fw0iqkfl/6FsTO3h2UpUoTea0mCK/HYj0HlpIudOeXklYfo0HpYqKnhsbR0oB/AkeDldNwBlf3uzyEMu24Bb5VbtWZ8Qmjm7k2CT17ZNX0dJwQ8c1LdsNjYRCUIQrvSFVFypkIwx5WCsWbBzyZSR2e8r7BkuyfdHl7dEN41ULGcq5hTy/x1qKTIS9AY/JbWW/tdzARREsnqUxNiRmtM8BR85BYxRfgFdOO+0FcDBbJJyFC9NHn7FSpbc5kuX/vOEcbpGye7V6rM3D33emKhW8sAER4UaXZjSYJD5LHXrRFm0eexGnSRGmXPvuSt1oa0kuE2w1jTR6ixmL5M4kmcsUQt+OnOha/ImeE1Aa88JKgBBA7K5QIaiCLsJAulZeVvcqpbFD2SH/4L+lOdev9z6cR485x5eHi5ehIeKlRiWoy4ZMydSyMcYQJlvsc2zFgR4QKatz1/iryeti6taJG8FWx4+XWwxQm57sxDrXK3FTsy9uu3wg39iUQJRVhmU52Oyg3obmsa9B3OLVqZFkOEgqy1R9XeJTJHe7ka4MTynRlkjWK7KX9eNCC+tSPMtUf8/bmH+YNS7Y3dQvnNNvvxs3U8XCH/rQ0M=
+    secure: MNBFCPscAm1+rY1qIHbye3Bwif9W/bPyHxvXyoKbi8G2URQjZKNYTpRT0bVShj6UBJihBrnXa40cxmU/F+rcQhPeY4uFIC5oBIyYkSrn0XvhJEqn/yQnBl0DrdImYSuYx480jLKvvNq3RIft2K+5y6+qb8QuumV/1p4QYbiM6Ibwz54SPfmJtzsMsei8bHzbDvOtKeoX8l3mGqyIVX1D/Nnnq9rH0UZnbqf7W5IH/QlCTpVAj5v/HRCSbCbJkbmwTYtx4PV0xS9vYgXklwFr0FcJXyZPmzqSRM/EYnhOg61uQCWM1JG12nDmdv8lkE+x5L6fV+YXTeBAKmnCBAZy8D7CYX0jDELrpKp4wKFofl/AkTDAlVsjEb4U+DVXuJOWt8KQzjYGLX6nXXOUzDD9OXNmB6010a2g3SQ4vCX3jHomycPZTgKPd4MN5xiJBfg/EXn1HlJdtO8jYFB2S87VVmFrJfwQ6x4iZxabmWPtasye3DP/OLX+8/8aWNGLMjP/Lr4muPS4B9OOlI3EvVo+DR3B381NPwzKaM9NLkeM3pHgMhm0K2mqOnbvhUhhkmmMkQI1T+RRf91zraPXAh7fMRDh2lDqKfrhtKobFBmONgXAtO7QPz2Bhp+kszwRo/Vx//H2VpUD45CNfMKnN99VYY/FHGYICBYH2mK/MX50HAA=
   on:
     tags: true
     repo: pushrocks/gulp-browser
