@@ -16,9 +16,7 @@
   },
   "keywords": [
     "gulpplugin",
-    "json",
-    "jade",
-    "template"
+    "browserify"
   ],
   "author": "Smart Coordination GmbH <office@push.rocks> (https://push.rocks)",
   "license": "MIT",
