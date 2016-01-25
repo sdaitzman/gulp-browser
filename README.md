@@ -29,3 +29,8 @@ gulp-browser is meant to be easy:
 ### Dev Information:
 [![devDependency Status](https://david-dm.org/pushrocks/gulp-browser/dev-status.svg)](https://david-dm.org/pushrocks/gulp-browser#info=devDependencies)
 [![bitHound Dev Dependencies](https://www.bithound.io/github/pushrocks/gulp-browser/badges/devDependencies.svg)](https://www.bithound.io/github/pushrocks/gulp-browser/master/dependencies/npm)
+
+### About the authors:
+[![Project Phase](https://mediaserve.lossless.digital/lossless.de/img/createdby_github.svg)](https://lossless.com/)
+
+[![Gitter](https://img.shields.io/badge/Support%20us-PayPal-blue.svg)](https://paypal.me/lossless)
