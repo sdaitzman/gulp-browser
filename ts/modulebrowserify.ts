@@ -11,7 +11,7 @@ module GulpBrowserBrowserify {
                     }
                     cb(null,file);
                 };
-                plugins.browserify(file)
+                plugins.browserify(file, { basedir: file.base })
                     .bundle(bundleCallback)
             });
         };
