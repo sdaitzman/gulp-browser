@@ -1,9 +1,10 @@
+// Compiled using typings@0.6.3
+// Source: https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/3191f6e0088eee07c4d8fd24e4d27a40a60d9eb9/browserify/browserify.d.ts
 // Type definitions for Browserify
 // Project: http://browserify.org/
 // Definitions by: Andrew Gaspar <https://github.com/AndrewGaspar/>
 // Definitions: https://github.com/borisyankov/DefinitelyTyped
 
-/// <reference path="../node/node.d.ts" />
 
 interface BrowserifyObject extends NodeJS.EventEmitter {
   add(file:string, opts?:any): BrowserifyObject;

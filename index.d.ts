@@ -1,4 +1,4 @@
-/// <reference path="ts/typings/tsd.d.ts" />
+/// <reference path="ts/typings/main.d.ts" />
 declare module GulpBrowserBrowserify {
     function init(): () => any;
 }

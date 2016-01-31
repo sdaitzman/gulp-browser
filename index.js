@@ -22,7 +22,7 @@ var GulpBrowserBrowserify;
     }
     GulpBrowserBrowserify.init = init;
 })(GulpBrowserBrowserify || (GulpBrowserBrowserify = {}));
-/// <reference path="./typings/tsd.d.ts" />
+/// <reference path="./typings/main.d.ts" />
 /// <reference path="./modulebrowserify.ts" />
 var plugins = {
     beautylog: require("beautylog"),

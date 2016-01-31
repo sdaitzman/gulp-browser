@@ -4,7 +4,7 @@
   "description": "browserify and other goodies for gulp",
   "main": "index.js",
   "scripts": {
-    "test": "(npmts) && (node test.js)",
+    "test": "(npmts)",
     "reinstall": "(rm -r node_modules && npm install)",
     "release": "(git pull origin master && npm version patch && git push origin master && git checkout release && git merge master && git push origin release && git checkout master)",
     "update": "(git checkout master && git pull origin master && npm install)",
@@ -33,6 +33,6 @@
   "devDependencies": {
     "gulp": "3.9.0",
     "gulp-callfunction": "0.0.10",
-    "npmts": "^1.0.9"
+    "npmts": "^2.0.0"
   }
 }
