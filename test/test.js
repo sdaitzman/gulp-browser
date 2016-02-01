@@ -1,31 +1,29 @@
 /// <reference path="./typings/main.d.ts" />
-console.log("**** starting test ****");
 var plugins = {
     beautylog: require("beautylog"),
     gulp: require("gulp"),
     gulpBrowser: require("../index.js"),
     gulpCallFunction: require("gulp-callfunction")
 };
-var pipeWorked = function () {
-    plugins.beautylog.info("Pipe didn't break! Ready for Primetime!");
-};
-plugins.beautylog.log('Now trying to browserify a testfile...');
-plugins.gulp.task('gulpBrowserTest', function (cb) {
-    var stream = plugins.gulp.src('./testassets/browserifyGulpTest.js')
-        .pipe(plugins.gulpBrowser.browserify())
-        .pipe(plugins.gulp.dest("./testassets/result/"))
-        .pipe(plugins.gulpCallFunction(pipeWorked));
-    return stream;
+describe("gulpBrowser", function () {
+    describe(".browserify", function () {
+        it("should run through smoothly", function (done) {
+            this.timeout(15000);
+            plugins.gulp.task('gulpBrowserNormal', function (cb) {
+                var stream = plugins.gulp.src('./test/browserifyGulpTest.js')
+                    .pipe(plugins.gulpBrowser.browserify())
+                    .pipe(plugins.gulp.dest("./test/result/"))
+                    .pipe(plugins.gulpCallFunction(done));
+                return stream;
+            });
+            plugins.gulp.start.apply(plugins.gulp, ['gulpBrowserNormal']);
+        });
+    });
 });
 plugins.gulp.task('gulpBrowserTestError', function (cb) {
     plugins.beautylog.info("Expecting an error:");
-    var stream = plugins.gulp.src('./testassets/browserifyGulpTestError.js')
+    var stream = plugins.gulp.src('./test/browserifyGulpTestError.js')
         .pipe(plugins.gulpBrowser.browserify())
-        .pipe(plugins.gulp.dest("./testassets/result/"))
-        .pipe(plugins.gulpCallFunction(pipeWorked));
+        .pipe(plugins.gulp.dest("./test/result/"));
     return stream;
 });
-plugins.gulp.task("default", ['gulpBrowserTest', 'gulpBrowserTestError'], function () {
-    plugins.beautylog.success("Test passed!");
-});
-plugins.gulp.start.apply(plugins.gulp, ['default']);
