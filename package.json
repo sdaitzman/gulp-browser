@@ -33,6 +33,6 @@
   "devDependencies": {
     "gulp": "3.9.0",
     "gulp-callfunction": "0.0.10",
-    "npmts": "^2.0.0"
+    "npmts": "^2.0.2"
   }
 }

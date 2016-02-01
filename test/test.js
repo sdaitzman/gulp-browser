@@ -1,8 +1,9 @@
 /// <reference path="./typings/main.d.ts" />
+console.log("**** starting test ****");
 var plugins = {
     beautylog: require("beautylog"),
     gulp: require("gulp"),
-    gulpBrowser: require("./index.js"),
+    gulpBrowser: require("../index.js"),
     gulpCallFunction: require("gulp-callfunction")
 };
 var pipeWorked = function () {
@@ -10,16 +11,17 @@ var pipeWorked = function () {
 };
 plugins.beautylog.log('Now trying to browserify a testfile...');
 plugins.gulp.task('gulpBrowserTest', function (cb) {
-    var stream = plugins.gulp.src('./test/browserifyGulpTest.js')
+    var stream = plugins.gulp.src('./testassets/browserifyGulpTest.js')
         .pipe(plugins.gulpBrowser.browserify())
-        .pipe(plugins.gulp.dest("./test/result/"))
+        .pipe(plugins.gulp.dest("./testassets/result/"))
         .pipe(plugins.gulpCallFunction(pipeWorked));
     return stream;
 });
 plugins.gulp.task('gulpBrowserTestError', function (cb) {
-    var stream = plugins.gulp.src('./test/browserifyGulpTestError.js')
+    plugins.beautylog.info("Expecting an error:");
+    var stream = plugins.gulp.src('./testassets/browserifyGulpTestError.js')
         .pipe(plugins.gulpBrowser.browserify())
-        .pipe(plugins.gulp.dest("./test/result/"))
+        .pipe(plugins.gulp.dest("./testassets/result/"))
         .pipe(plugins.gulpCallFunction(pipeWorked));
     return stream;
 });
