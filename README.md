@@ -6,7 +6,7 @@ browserify and other goodies for gulp
 [![Dependency Status](https://david-dm.org/pushrocks/gulp-browser.svg)](https://david-dm.org/pushrocks/gulp-browser)
 [![bitHound Dependencies](https://www.bithound.io/github/pushrocks/gulp-browser/badges/dependencies.svg)](https://www.bithound.io/github/pushrocks/gulp-browser/master/dependencies/npm)
 [![bitHound Code](https://www.bithound.io/github/pushrocks/gulp-browser/badges/code.svg)](https://www.bithound.io/github/pushrocks/gulp-browser)
-
+[![Coverage Status](https://coveralls.io/repos/github/pushrocks/gulp-browser/badge.svg?branch=master)](https://coveralls.io/github/pushrocks/gulp-browser?branch=master)
 
 ### Usage
 gulp-browser is meant to be easy:
