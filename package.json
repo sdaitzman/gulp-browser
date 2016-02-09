@@ -25,14 +25,14 @@
   },
   "homepage": "https://github.com/pushrocks/gulp-browser",
   "dependencies": {
-    "beautylog": "2.0.6",
+    "beautylog": "2.0.7",
     "browserify": "13.0.0",
     "gulp-util": "3.0.7",
-    "through2": "2.0.0"
+    "through2": "2.0.1"
   },
   "devDependencies": {
-    "gulp": "3.9.0",
+    "gulp": "3.9.1",
     "gulp-function": "1.0.2",
-    "npmts": "^2.0.3"
+    "npmts": "^2.1.8"
   }
 }

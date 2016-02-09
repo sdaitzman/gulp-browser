@@ -21,11 +21,3 @@ describe("gulpBrowser",function(){
         });
     });
 });
-
-plugins.gulp.task('gulpBrowserTestError',function(cb) {
-    plugins.beautylog.info("Expecting an error:");
-    var stream = plugins.gulp.src('./test/browserifyGulpTestError.js')
-        .pipe(plugins.gulpBrowser.browserify())
-        .pipe(plugins.gulp.dest("./test/result/"));
-    return stream;
-});
