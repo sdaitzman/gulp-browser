@@ -8,7 +8,7 @@ var plugins = {
 describe("gulpBrowser", function () {
     describe(".browserify", function () {
         it("should run through smoothly", function (done) {
-            this.timeout(15000);
+            this.timeout(20000);
             plugins.gulp.task('gulpBrowserNormal', function (cb) {
                 var stream = plugins.gulp.src('./test/browserifyGulpTest.js')
                     .pipe(plugins.gulpBrowser.browserify())
