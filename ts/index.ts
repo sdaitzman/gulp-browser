@@ -1,18 +1,12 @@
 /// <reference path="./typings/main.d.ts" />
-/// <reference path="./modulebrowserify.ts" />
 
-var plugins = {
-    beautylog: require("beautylog"),
-    through: require("through2"),
-    gutil: require("gulp-util"),
-    path: require("path"),
-    browserify: require("browserify")
-};
+import browserify = require("./gulpbrowser.browserify");
 
 
 //create the return object
-var gulpBrowser:any = {};
+var gulpBrowser:any = {
+    browserify: browserify
+};
 
-gulpBrowser.browserify = GulpBrowserBrowserify.init();
 
-module.exports = gulpBrowser;
+export = gulpBrowser;
