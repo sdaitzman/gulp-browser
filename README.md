@@ -33,4 +33,4 @@ gulp-browser is meant to be easy:
 ### About the authors:
 [![Project Phase](https://mediaserve.lossless.digital/lossless.com/img/createdby_github.svg)](https://lossless.com/)
 
-[![Gitter](https://img.shields.io/badge/Support%20us-PayPal-blue.svg)](https://paypal.me/lossless)
+[![PayPal](https://img.shields.io/badge/Support%20us-PayPal-blue.svg)](https://paypal.me/lossless)
