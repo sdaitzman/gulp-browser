@@ -1,10 +1,5 @@
 /// <reference path="./typings/main.d.ts" />
-var plugins = {
-    beautylog: require("beautylog"),
-    through: require("through2"),
-    gutil: require("gulp-util"),
-    path: require("path"),
-    browserify: require("browserify")
-};
-
-export = plugins;
+export let beautylog = require("beautylog");
+export let through = require("through2");
+export let path = require("path");
+export let browserify = require("browserify");
