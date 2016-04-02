@@ -30,6 +30,9 @@ gulp-browser is meant to be easy:
 [![devDependency Status](https://david-dm.org/pushrocks/gulp-browser/dev-status.svg)](https://david-dm.org/pushrocks/gulp-browser#info=devDependencies)
 [![bitHound Dev Dependencies](https://www.bithound.io/github/pushrocks/gulp-browser/badges/devDependencies.svg)](https://www.bithound.io/github/pushrocks/gulp-browser/master/dependencies/npm)
 
+### Extending this module
+If you have ideas for other great browser related gulp pipe stops, feel free to raise an issue on GitHub.
+
 ### About the authors:
 [![Project Phase](https://mediaserve.lossless.digital/lossless.com/img/createdby_github.svg)](https://lossless.com/)
 
