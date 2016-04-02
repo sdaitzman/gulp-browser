@@ -32,7 +32,7 @@
   "devDependencies": {
     "gulp": "3.9.1",
     "gulp-function": "1.2.0",
-    "npmts": "^3.3.2",
+    "npmts": "^4.0.1",
     "should": "^8.3.0"
   }
 }
