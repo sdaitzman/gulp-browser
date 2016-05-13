@@ -1,2 +1,2 @@
-declare let browserify: (transforms: any) => any;
+declare let browserify: (transforms?: any[]) => any;
 export = browserify;
