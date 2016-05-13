@@ -5,7 +5,7 @@ import plugins = require("./gulpbrowser.plugins");
 let browserify =  function(transforms) {
 
     transforms = transforms || [];
-    if (typeof transforms === 'function') {
+    if (!Array.isArray(transforms)) {
         transforms = [transforms];
     }
 
