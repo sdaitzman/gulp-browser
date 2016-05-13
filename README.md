@@ -18,7 +18,7 @@ gulp-browser is meant to be easy:
     
     gulp.task('gulpBrowserTest',function() {
         var stream = gulp.src('./test/*.js')
-            .pipe(gulpBrowser.browserify())
+            .pipe(gulpBrowser.browserify(trasforms)) // optional array of tansforms
             .pipe(gulp.dest("./test/browserifiedJS/"));
         return stream;
     });
@@ -33,7 +33,11 @@ gulp-browser is meant to be easy:
 ### Extending this module
 If you have ideas for other great browser related gulp pipe stops, feel free to raise an issue on GitHub.
 
-### About the authors:
+### Contributors
+* [Phil Kunz](https://github.com/philkunz.com)
+* [Steffan Donal](https://github.com/SteffanDonal)
+
+### About the maintainer:
 [![Project Phase](https://mediaserve.lossless.digital/lossless.com/img/createdby_github.svg)](https://lossless.com/)
 
 [![PayPal](https://img.shields.io/badge/Support%20us-PayPal-blue.svg)](https://paypal.me/lossless)
