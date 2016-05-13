@@ -18,7 +18,7 @@ gulp-browser is meant to be easy:
     
     gulp.task('gulpBrowserTest',function() {
         var stream = gulp.src('./test/*.js')
-            .pipe(gulpBrowser.browserify(trasforms)) // optional array of tansforms
+            .pipe(gulpBrowser.browserify(transforms)) // gulp.browserify() accepts an optional array of tansforms
             .pipe(gulp.dest("./test/browserifiedJS/"));
         return stream;
     });
