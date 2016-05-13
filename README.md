@@ -34,7 +34,7 @@ gulp-browser is meant to be easy:
 If you have ideas for other great browser related gulp pipe stops, feel free to raise an issue on GitHub.
 
 ### Contributors
-* [Phil Kunz](https://github.com/philkunz.com)
+* [Phil Kunz](https://github.com/philkunz)
 * [Steffan Donal](https://github.com/SteffanDonal)
 
 ### About the maintainer:
