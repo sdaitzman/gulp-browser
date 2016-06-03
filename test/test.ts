@@ -1,11 +1,11 @@
-/// <reference path="../ts/typings/main.d.ts" />
+import "typings-test"
 let plugins = {
     beautylog: require("beautylog"),
     gulp: require("gulp"),
     gulpBrowser: require("../dist/index.js"),
     gulpFunction: require("gulp-function")
 };
-let should = require("should");
+import "should";
 
 
 describe("gulpBrowser", function () {
