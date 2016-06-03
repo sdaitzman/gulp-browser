@@ -19,7 +19,7 @@ gulp-browser is meant to be easy:
     let transforms = [
         {
             transform: "babelify",
-            options: {presets: ["es2015", "react"]}
+            options: {presets: ["es2015"]}
         }
     ];
     

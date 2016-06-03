@@ -45,7 +45,7 @@ describe("gulpBrowser", function () {
             let transforms = [
                 {
                     transform: "babelify",
-                    options: {presets: ["es2015", "react"]}
+                    options: {presets: ["es2015"]}
                 }
             ];
             let stream = plugins.gulp.src('./test/testBrowserifyNormal.js')
