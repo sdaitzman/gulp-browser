@@ -2,7 +2,7 @@
 browserify and other goodies for gulp
 
 ### Status
-[![Build Status](https://travis-ci.org/pushrocks/gulp-browser.svg?branch=master)](https://travis-ci.org/pushrocks/gulp-browser)
+[![build status](https://gitlab.com/pushrocks/gulp-browser/badges/master/build.svg)](https://gitlab.com/pushrocks/gulp-browser/commits/master)
 [![Dependency Status](https://david-dm.org/pushrocks/gulp-browser.svg)](https://david-dm.org/pushrocks/gulp-browser)
 [![bitHound Dependencies](https://www.bithound.io/github/pushrocks/gulp-browser/badges/dependencies.svg)](https://www.bithound.io/github/pushrocks/gulp-browser/master/dependencies/npm)
 [![bitHound Code](https://www.bithound.io/github/pushrocks/gulp-browser/badges/code.svg)](https://www.bithound.io/github/pushrocks/gulp-browser)
@@ -12,9 +12,11 @@ browserify and other goodies for gulp
 gulp-browser is meant to be easy:
 
 #### Browserify:
-```javascript
-    var gulp = require("gulp");
-    var gulpBrowser = require("gulp-browser");
+```typescript
+    let gulp = require("gulp");
+    let gulpBrowser = require("gulp-browser");
+    
+    let transforms = [];
     
     gulp.task('gulpBrowserTest',function() {
         var stream = gulp.src('./test/*.js')
