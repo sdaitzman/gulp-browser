@@ -16,7 +16,12 @@ gulp-browser is meant to be easy:
     let gulp = require("gulp");
     let gulpBrowser = require("gulp-browser");
     
-    let transforms = [];
+    let transforms = [
+        {
+            transform: "babelify",
+            options: {presets: ["es2015", "react"]}
+        }
+    ];
     
     gulp.task('gulpBrowserTest',function() {
         var stream = gulp.src('./test/*.js')

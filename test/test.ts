@@ -40,5 +40,18 @@ describe("gulpBrowser", function () {
                 .pipe(plugins.gulp.dest("./test/result/"))
                 .pipe(plugins.gulpFunction(done));
         });
+        it("should run through work with transforms", function (done) {
+            this.timeout(30000);
+            let transforms = [
+                {
+                    transform: "babelify",
+                    options: {presets: ["es2015", "react"]}
+                }
+            ];
+            let stream = plugins.gulp.src('./test/testBrowserifyNormal.js')
+                .pipe(plugins.gulpBrowser.browserify(transforms))
+                .pipe(plugins.gulp.dest("./test/result/"))
+                .pipe(plugins.gulpFunction(done));
+        });
     });
 });
