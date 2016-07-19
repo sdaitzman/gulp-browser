@@ -40,6 +40,9 @@ gulp-browser is meant to be easy:
 ### Extending this module
 If you have ideas for other great browser related gulp pipe stops, feel free to raise an issue on GitHub.
 
+### Issues
+Issues can be reported at the [GitLab repository](https://gitlab.com/pushrocks/gulp-browser).
+
 ### Contributors
 * [Phil Kunz](https://github.com/philkunz)
 * [Steffan Donal](https://github.com/SteffanDonal)
